@@ -208,7 +208,8 @@ static const CGFloat kLabelsFontSize = 12.0f;
             if (i+2 > self.selectedMinimum && i+2 < self.selectedMaximum) {
                 trackCircle.fillColor = [UIColor whiteColor].CGColor;
             } else {
-                trackCircle.fillColor = [UIColor colorByHexString:@"#C1C5C5"].CGColor;
+                trackCircle.fillColor = [UIColor whiteColor].CGColor;
+                //trackCircle.fillColor = [UIColor colorByHexString:@"#C1C5C5"].CGColor;
             }
         }
     }
