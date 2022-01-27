@@ -7,6 +7,7 @@
 
 #import "JKPickBySlideRange.h"
 
+
 const int HANDLE_TOUCH_AREA_EXPANSION = -30; //expand the touch area of the handle by this much (negative values increase size) so that you don't have to touch right on the handle to activate it.
 const float TEXT_HEIGHT = 14;
 
@@ -205,9 +206,9 @@ static const CGFloat kLabelsFontSize = 12.0f;
             trackCircle.position = CGPointMake(self.sliderLine.frame.origin.x + stepWidth*(i+1), self.sliderLine.frame.origin.y + self.lineHeight/2);
             trackCircle.path = [UIBezierPath bezierPathWithRoundedRect:trackCircle.bounds cornerRadius:0].CGPath;
             if (i+2 > self.selectedMinimum && i+2 < self.selectedMaximum) {
-                trackCircle.fillColor = RGBHex(@"#FFFFFF").CGColor;
+                trackCircle.fillColor = [UIColor whiteColor].CGColor;
             } else {
-                trackCircle.fillColor = RGBHex(@"#C1C5C5").CGColor;
+                trackCircle.fillColor = //RGBHex(@"#C1C5C5").CGColor;
             }
         }
     }
