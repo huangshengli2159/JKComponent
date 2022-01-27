@@ -52,12 +52,13 @@
     [[NSScanner scannerWithString:gString] scanHexInt:&g];
     [[NSScanner scannerWithString:bString] scanHexInt:&b];
     
-    if (@available(iOS 10.0, *)) {
-        return [UIColor colorWithDisplayP3Red:r / 255.0 green:g / 255.0 blue:b / 255.0 alpha:alpha];
-    } else {
-        // Fallback on earlier versions
-        return [UIColor colorWithRed:r / 255.0 green:g / 255.0 blue:b / 255.0 alpha:alpha];
-    }
+    return [UIColor colorWithDisplayP3Red:r / 255.0 green:g / 255.0 blue:b / 255.0 alpha:alpha];
+//    if (@available(iOS 10.0, *)) {
+//        return [UIColor colorWithDisplayP3Red:r / 255.0 green:g / 255.0 blue:b / 255.0 alpha:alpha];
+//    } else {
+//        // Fallback on earlier versions
+//        return [UIColor colorWithRed:r / 255.0 green:g / 255.0 blue:b / 255.0 alpha:alpha];
+//    }
 }
 
 @end
