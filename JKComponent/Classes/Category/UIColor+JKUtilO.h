@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @brief 将16进制颜色字符串转成UXColor对象
  *
- *  @param hexString4Color 6进制颜色字符串， 支持@“#123456”、 @“0X123456”、 @“123456”三种格式
+ *  @param hexString 6进制颜色字符串， 支持@“#123456”、 @“0X123456”、 @“123456”三种格式
  *
  *  @return 返回相应的UXColor对象
  *
@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  @brief 将16进制颜色字符串按照指定透明度转成UIColor对象
  *
- *  @param hexString4Color 16进制颜色字符串， 支持@“#123456”、 @“0X123456”、 @“123456”三种格式
+ *  @param hexString 16进制颜色字符串， 支持@“#123456”、 @“0X123456”、 @“123456”三种格式
  *  @param alpha           颜色的透明度
  *
  *  @return 返回相应的UIColor对象
