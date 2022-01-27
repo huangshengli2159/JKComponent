@@ -209,7 +209,6 @@ static const CGFloat kLabelsFontSize = 12.0f;
                 trackCircle.fillColor = [UIColor whiteColor].CGColor;
             } else {
                 trackCircle.fillColor = [UIColor whiteColor].CGColor;
-                //trackCircle.fillColor = [UIColor colorByHexString:@"#C1C5C5"].CGColor;
             }
         }
     }
